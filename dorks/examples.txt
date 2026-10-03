@@ -1,0 +1,27 @@
+# Example dork list for dork_search.py
+# One dork per line. Lines starting with # are ignored.
+# Google/Bing syntax: intitle:, inurl:, intext:, site:, "exact phrase"
+#
+# These are generic discovery examples — replace them with dorks that match
+# YOUR authorized scope before running.
+
+# admin panels / login pages
+intitle:"admin login" inurl:/admin/login
+intitle:"login" inurl:/wp-login.php
+inurl:/manager/html intitle:"Tomcat"
+
+# exposed file listings
+intitle:"index of" "parent directory"
+intitle:"index of" ".git"
+
+# dashboards / control panels
+intitle:"dashboard" inurl:/dashboard
+intitle:"control panel" inurl:/panel
+
+# app fingerprints (version banners, api docs)
+inurl:"/swagger-ui.html"
+inurl:"/graphql" intitle:"graphiql"
+
+# Dorks containing '=' work fine (the DORK=FILE split for --import-html
+# only splits at the first '=' whose right side is an existing file).
+inurl:page_id=

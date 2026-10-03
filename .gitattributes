@@ -1,0 +1,15 @@
+# Normalize line endings to LF in the repository so Linux and Windows checkouts
+# produce clean, consistent diffs (this project is pure Python/text).
+* text=auto eol=lf
+
+*.py   text eol=lf
+*.md   text eol=lf
+*.toml text eol=lf
+*.yml  text eol=lf
+*.txt  text eol=lf
+
+# Binary assets (none ship today; declared defensively).
+*.png  binary
+*.jpg  binary
+*.gif  binary
+*.ico  binary
