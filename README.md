@@ -163,12 +163,6 @@ A colorized `DORK SEARCHER` ASCII-art banner prints at startup:
 ==================================================================
 ```
 
-Console markers are colorized - `[+]` green (success), `[*]` cyan (progress),
-`[!]` red (error), with paths/annotations dimmed. Color is auto-enabled on a TTY
-and auto-off when output is redirected/piped (clean logs) or when the `NO_COLOR`
-env var is set; `--color` / `--no-color` override it, and `--no-banner` suppresses
-the banner. The JSON, CSV and targets files are always written plain (no ANSI).
-
 ## Testing
 
 Offline unit tests (parsers, filters, dedupe, outputs):
